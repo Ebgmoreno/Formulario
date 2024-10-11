@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Datos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="ribbon">
+    <h2 style="color:white; margin-right: auto;">Registro de Equipo</h2>
+    <button id="clearFormButton" type="reset">Limpiar formulario</button>
+    <button id="viewDataButton">Equipos Registrados</button>
+    <button id="logoutButton">Cerrar sesión</button> 
+
+  </div>
+
+  <form id="dataForm">
+    <fieldset>
+      <legend>Información del usuario que entrega</legend>
+      <div>
+        <label for="nombreCompleto">Nombre:</label> 
+        <input type="text" id="nombreCompleto" name="nombreCompleto" placeholder="Ingrese Grado y Nombre Completo" required>
+      </div>
+      <div>
+        <label for="unidad">Unidad:</label>
+        <input type="text" id="unidad" name="unidad" placeholder="Ingrese la Unidad de procedencia" required>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Detalles del Equipo que se recepciona</legend>
+      <div>
+        <label for="serie">Serie:</label>
+        <input type="text" id="serie" name="serie" placeholder="Ingrese la serie del Equipo APX2000" required>
+      </div>
+      <fieldset name="motivo"> 
+        <legend>Motivo (Selecciona todos los que apliquen):</legend>
+        <div> <input type="checkbox" id="equipo" name="motivo" value="Equipo">
+          <label for="equipo">Equipo</label> </div>
+        <div> <input type="checkbox" id="bateria" name="motivo" value="Batería">
+          <label for="bateria">Batería</label> </div>
+        <div> <input type="checkbox" id="pantalla" name="motivo" value="Pantalla">
+          <label for="pantalla">Pantalla</label> </div>
+        <div> <input type="checkbox" id="antena" name="motivo" value="Antena">
+          <label for="antena">Antena</label> </div>
+        <div> <input type="checkbox" id="botones" name="motivo" value="Botones">
+          <label for="botones">Botones</label> </div>
+        <div> <input type="checkbox" id="cargador" name="motivo" value="Cargador">
+          <label for="cargador">Cargador</label> </div>
+        <div> <input type="checkbox" id="eliminador" name="motivo" value="Eliminador">
+          <label for="eliminador">Eliminador</label> </div>
+        <div> <input type="checkbox" id="perillas" name="motivo" value="Perillas">
+          <label for="perillas">Perillas</label> </div>
+      </fieldset>
+
+      <div>
+        <label for="descripcionDetallada">Descripción detallada:</label>
+        <textarea id="descripcionDetallada" name="descripcionDetallada"></textarea>
+      </div>
+
+      <div>
+        <label for="fechaMinistracion">Fecha de Ministración:</label>
+        <input type="date" id="fechaMinistracion" name="fechaMinistracion" required>
+      </div> 
+    </fieldset>
+
+    <fieldset> 
+      <legend>Datos del usuario que recibe</legend>
+      <div> 
+        <label for="usuarioRecibe">Nombre:</label>
+        <input type="text" id="usuarioRecibe" name="usuarioRecibe" placeholder="Ingrese el Grado y Nombre completo" required>
+      </div>
+      <div>
+        <label for="fechaRecepcion">Fecha de Recepción:</label>
+        <input type="date" id="fechaRecepcion" name="fechaRecepcion" required>
+      </div>
+
+      <fieldset>
+        <legend>Prioridad:</legend>
+        <div>
+          <input type="checkbox" id="ordinario" name="prioridad" value="Ordinario">
+          <label for="ordinario">Ordinario</label>
+        </div>
+        <div>
+          <input type="checkbox" id="urgente" name="prioridad" value="Urgente">
+          <label for="urgente">Urgente</label>
+        </div>
+        <div>
+          <input type="checkbox" id="extraUrgente" name="prioridad" value="Extra-Urgente">
+          <label for="extraUrgente">Extra-Urgente</label>
+        </div>
+      </fieldset>
+    </fieldset>
+
+    <button type="submit">Enviar</button>
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>

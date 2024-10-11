@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editar Detalles del Equipo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ribbon">
+    <h2 style="color:white; margin-right: auto;">Editar Detalles del Equipo</h2>
+    <button id="backButton">Regresar a los detalles</button> 
+    <button id="logoutButton">Cerrar sesión</button> 
+  </div>
+
+  <form id="detallesForm">
+    <input type="hidden" id="serie" name="serie"> 
+    <div>
+      <label for="estado">Estado:</label>
+      <select id="estado" name="estado">
+        <option value="En revisión">En revisión</option>
+        <option value="En mantenimiento">En mantenimiento</option>
+        <option value="Reparado">Reparado</option>
+        <option value="Entregado al área usuaria">Entregado al área usuaria</option>
+      </select>
+    </div>
+    <div>
+      <label for="observaciones">Observaciones:</label>
+      <textarea id="observaciones" name="observaciones"></textarea>
+    </div>
+    <div>
+      <label for="reparadoPor">Reparado por:</label>
+      <input type="text" id="reparadoPor" name="reparadoPor">
+    </div>
+    <div>
+      <label for="anotaciones">Anotaciones:</label>
+      <textarea id="anotaciones" name="anotaciones"></textarea>
+    </div>
+
+    <button type="submit">Guardar</button>
+  </form>
+
+  <script type="module" src="formulario-detalles.js"></script> </body>
+</html>

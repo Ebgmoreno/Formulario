@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Datos Ingresados</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="ribbon">
+    <h2 style="color:white; margin-right: auto;">Equipos en Mantenimiento</h2>
+    <input type="text" id="searchInput" class="search-input" placeholder="Buscar...">
+    <button id="searchButton">Buscar</button>
+    <button id="resetButton">Limpiar Búsqueda</button>
+    <button id="backButton">Regresar al Formulario</button>
+    <button id="logoutButton">Cerrar Sesión</button>
+  </div>
+
+  <table id="dataTable">
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Unidad</th>
+        <th>Serie</th>
+        <th>Motivo</th>
+        <th>Descripción detallada</th>
+        <th>Fecha de Ministración</th>
+        <th>Nombre</th>
+        <th>Fecha de Recepción</th>
+        <th>Prioridad</th>
+        <th>Estado</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+  <script src="visualizacionscript.js"></script>
+</body>
+</html>
